@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_titleRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#fff"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_FirstNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titleRegis"
+        android:hint="Nama Depan"
+        android:textColorHint="#fff"
+        android:textColor="#000000"
+        android:background="@drawable/bmi_edittext"
+        android:padding="12dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_lastnameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_FirstNameInput"
+        android:hint="Nama Belakang"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:background="@drawable/bmi_edittext"
+        android:padding="12dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_usernameinputReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_lastnameinput"
+        android:hint="Masukan Email"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:background="@drawable/bmi_edittext"
+        android:padding="12dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_passwordinputReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_usernameinputReg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#fff"
+        android:background="@drawable/bmi_edittext"
+        android:padding="12dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/bt_registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="#fafafa"
+        android:background="@drawable/bg_rounded_btn"
+        app:layout_constraintTop_toBottomOf="@id/et_passwordinputReg"/>
+
+
+
+    <Button
+        android:id="@+id/tv_back_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_registerbutton"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textColor="#fafafa"
+        android:background="@drawable/bmi_button"
+        android:textStyle="bold"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
