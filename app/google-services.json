@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "410940108642-ourvo7adsg8ilkmtbh1ffv7on82pltqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zhavei.taskudacodingweek2",
+            "certificate_hash": "be920d53cc8a144b93ff66cae47ddd83a003a248"
+          }
+        },
+        {
           "client_id": "410940108642-7f56jscgktpgqeou3ja3k5kihcgpqfsg.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -33,8 +33,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login()
-//        skipLogin()
-
     }
 
 
@@ -65,12 +63,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this@LoginActivity, RegistrationActivity::class.java))
         }
     }
-
-//    private fun skipLogin() {
-//        tv_skipLogin.setOnClickListener{
-//            startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
-//        }
-//    }
 
     override fun onBackPressed() {
         AlertDialog.Builder(this)

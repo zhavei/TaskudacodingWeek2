@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.Toast
 import com.zhavei.taskudacodingweek2.R
+import kotlinx.android.synthetic.main.activity_age_main.*
 import kotlinx.android.synthetic.main.bmi_activity_main.*
 
 class BmimainActivity : AppCompatActivity() {
@@ -21,6 +23,11 @@ class BmimainActivity : AppCompatActivity() {
             val berat = bmi_et_weight.text.toString().toFloat()         // dapet nilai berat dari editext kemudian konvert ke float
             val hasil : Float = berat/(tinggi*tinggi)  // formula hitung berat badan ideal
             bmi_tv_result.text = "%.2f".format(hasil) // format hasil hanya menampilkan 2 digit decimal
+
+
+
+
+
         }
 
     }
