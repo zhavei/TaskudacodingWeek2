@@ -51,7 +51,7 @@ class ListviewMainActivity : AppCompatActivity() {
         )
 
         listVehicle.add(
-            ModelDataVehicle("Motor Honda", "Motor Kota", R.drawable.listv_yunda, false)
+            ModelDataVehicle("Motor Honda", "Motor Kota", R.drawable.listv_motorhonda, false)
         )
 
         adapter = AdapterVehicle(this, listVehicle)

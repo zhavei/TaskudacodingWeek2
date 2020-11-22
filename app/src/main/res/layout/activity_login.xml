@@ -20,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="#fff"
+        android:paddingTop="20dp"
         android:layout_margin="10dp"/>
 
     <EditText
