@@ -30,7 +30,7 @@
         android:text="Berat Badan Anda dalam KG" />
 
     <EditText
-        android:id="@+id/bmi_et_weight"
+        android:id="@+id/bmi_et_berat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -46,7 +46,7 @@
         android:text="Tinggi Badan Anda Dalam Cm" />
 
     <EditText
-        android:id="@+id/bmi_et_height"
+        android:id="@+id/bmi_et_tinggi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -54,33 +54,52 @@
         android:inputType="numberDecimal"
         android:padding="12dp" />
 
-    <Button
-        android:id="@+id/bmi_btn_hitung"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginVertical="15dp"
-        android:background="@drawable/bmi_button"
-        android:text="Hitung"
-        android:textColor="#fafafa" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmi_bt_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/bmi_button"
+            android:text="Hitung"
+            android:textColor="#fafafa" />
+
+        <Button
+            android:id="@+id/bmi_bt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/bmi_button_reset"
+            android:text="Reset"
+            android:textColor="#fafafa" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/bmi_tv_yourindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Index BMI Anda"
         android:background="@drawable/bmi_edittext"
-        android:padding="5dp"
-        android:text="Hasil Perhitungan"
-        android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="30sp" />
-
+        android:padding="10dp"
+        android:textSize="15sp" />
     <TextView
-        android:id="@+id/bmi_tv_result"
+        android:id="@+id/bmi_tv_result_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="50sp" />
+        android:hint="Info"
+        android:textSize="15sp" />
 
 
 </LinearLayout>
