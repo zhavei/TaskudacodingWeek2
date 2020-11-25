@@ -4,9 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.zhavei.taskudacodingweek2.R
 
@@ -52,6 +50,21 @@ class BmimainActivity : AppCompatActivity() {
             tvdetailBerat.text = ""
             tvHasilCalculate.text = ""
         }
+
+        // spiner code
+        val spinner: Spinner = findViewById(R.id.bmi_sp_kelamin)
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.gender_array,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner.adapter = adapter
+        }
+
+        //icon back ke hal list
+        val arrowBack = findViewById<ImageView>(R.id.iv_arrow_back)
+        arrowBack.setOnClickListener { onBackPressed() }
     }
 
     fun BMICalculate(weight: Float, height: Float): Float {
@@ -75,4 +88,6 @@ class BmimainActivity : AppCompatActivity() {
             else -> "Kamu Obsesi Gendut apa Obesitas"
         }
     }
+
+
 }

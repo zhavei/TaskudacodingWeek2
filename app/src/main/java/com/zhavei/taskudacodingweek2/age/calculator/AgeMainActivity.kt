@@ -1,11 +1,12 @@
 package com.zhavei.taskudacodingweek2.age.calculator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zhavei.taskudacodingweek2.R
 import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.zhavei.taskudacodingweek2.R
 import kotlinx.android.synthetic.main.activity_age_main.*
 import java.util.*
 
@@ -37,5 +38,13 @@ class AgeMainActivity : AppCompatActivity() {
                 age_tv_calculate.text = "Umur Anda " + myAge + " Tahun"
             }
         }
+
+        //icon back ke hal list
+        val arrowBack = findViewById<ImageView>(R.id.iv_arrow_back)
+        arrowBack.setOnClickListener { onBackPressed() }
     }
+
 }
+
+
+
